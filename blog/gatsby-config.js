@@ -16,13 +16,7 @@ module.exports = {
     contact: {
       name: `Tracey Morris`,
       company: `Blogs LLC.`,
-      address: `PO Box 1234`,
-      get address() {
-        return this._address;
-      },
-      set address(value) {
-        this._address = value;
-      },
+      
     }
   },
   plugins: [
