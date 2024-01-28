@@ -13,7 +13,7 @@ const Contact = ({ data }) => {
             <h1>Contact Us</h1>
             <p>Please send all inquiries to: </p>
             <div>{company}</div>
-            <div>{`C/O ${name}`}</div>
+t            <div>{`C/O ${name}`}</div>
             <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
                 <StaticImage
                 src="../image/gatsby-icon.png"
