@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql, Link} from 'gatsby'
+import React from 'react'
+import { graphql, Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import Layout from "../components/layout"
+import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const About = ({ data }) => {
@@ -23,7 +23,7 @@ const About = ({ data }) => {
                 style={{ marginBottom: `1.45rem`}}
                 />
             </div>
-            <link to="/">Home</link>
+            <Link to="/">Home</Link>
         </Layout>
     )
 
@@ -32,8 +32,8 @@ const About = ({ data }) => {
 export default About
 
 export const query = graphql`
-query{
-    site{
+query {
+    site {
         siteMetadata {
             contact {
                 name
