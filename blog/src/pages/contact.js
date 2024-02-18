@@ -6,7 +6,7 @@ import { Layout } from '../components/layout'
 import Seo from '../components/seo'
 
 const Contact = ({ data }) => {
-    const { name, company, } = data.site.siteMetadata.contact
+    const { name, company, address } = data.site.siteMetadata.contact
     return (
         <Layout>
             <Seo title="Contact Us" />
