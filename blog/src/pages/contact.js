@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import { Layout } from '../components/layout'
-import Seo from '../components/Seo'
+import Seo from '../components/seo'
 
 const Contact = ({ data }) => {
     const { name, company, address } = data.site.siteMetadata.contact
