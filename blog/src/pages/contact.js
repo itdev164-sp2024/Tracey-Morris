@@ -6,7 +6,7 @@ import { Layout } from '../components/layout'
 import Seo from '../components/seo'
 
 const Contact = ({ data }) => {
-    const { name, company, address } = data.site.siteMetadata.contact
+    const { name, company,  } = data.site.siteMetadata.contact
     return (
         <Layout>
             <Seo title="Contact Us" />
@@ -14,7 +14,7 @@ const Contact = ({ data }) => {
             <p>Please send all inquires to: </p>
             <div>{company}</div>
             <div>{`C/O ${name}`}</div>
-            <div>{address}</div>
+            <div>{name}</div>
             <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
                 <StaticImage
                 src="../image/gatsby-icon.png"
@@ -39,7 +39,7 @@ query {
             contact {
                 name
                 company
-                address
+
             }
         }
     }
