@@ -39,6 +39,7 @@ query {
             contact {
                 name
                 company
+                address
             }
         }
     }

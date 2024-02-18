@@ -13,18 +13,18 @@ const About = ({ data }) => {
             <h1>About Us</h1>
             <p>{`${company} was started by ${name} in 2024.`}</p>
             <p>{`At ${company} we just make blogs!`}</p>
-            <div style={{ maxwidth: `300px`, marginBottom: `1.45rem`}}>
-                <StaticImage
-                src="../image/gatsby-icon.png"
+            <div style={{ maxwidth: `300px`, marginBottom: `1.45rem` }}>
+            <StaticImage
+                src="../images/gatsby-icon.png"
                 width={300}
                 quality={95}
                 formats={["auto", "webp", "avif"]}
-                alt= "A Gatsby Blog"
+                alt= "A Gatsby blog"
                 style={{ marginBottom: `1.45rem`}}
                 />
-                </div>
-                <Link to="/">Home</Link>
-                </Layout>
+            </div>
+            <Link to="/">Home</Link>
+        </Layout>
     )
 }
 
