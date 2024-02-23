@@ -11,35 +11,34 @@ const About = ({ data }) => {
         <Layout>
             <Seo title="About Us" />
             <h1>About Us</h1>
-            <p>{`${company} was started by ${name} in 2024. `}</p>
+            <p>{`${company} was started by ${name} in 2024.`}</p>
             <p>{`At ${company} we just make blogs!`}</p>
-            <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                <StaticImage
+            <div style={{ maxwidth: `300px`, marginBottom: `1.45rem` }}>
+            <StaticImage
                 src="../images/gatsby-icon.png"
                 width={300}
                 quality={95}
                 formats={["auto", "webp", "avif"]}
-                alt="A Gatsby blog"
+                alt= "A Gatsby blog"
                 style={{ marginBottom: `1.45rem`}}
                 />
             </div>
             <Link to="/">Home</Link>
         </Layout>
     )
-
-    }
+}
 
 export default About
 
 export const query = graphql`
-query {
-    site {
-        siteMetadata {
-            contact {
-                name
-                company
+    query {
+        site {
+            siteMetadata {
+                contact {
+                    name
+                    company
+                }
             }
         }
     }
-}
 `

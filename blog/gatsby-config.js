@@ -9,14 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Trays Gatsby blog`,
-    description: `youve got this bro!`,
+    title: `Trays Gatsby Blog`,
+    description: `Welcome to the thunder dome.`,
     author: `Tracey Morris`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
       name: `Tracey Morris`,
-      company: `Blogs LLC.`,
-      
+      company: `Big Blogs LLC`
     }
   },
   plugins: [
