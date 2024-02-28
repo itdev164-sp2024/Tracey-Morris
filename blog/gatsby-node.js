@@ -5,7 +5,7 @@ const path = require('path');
  */
 exports.createPages = async ({ graphql, actions }) => {
   const { createPages } = actions;
-  return new promise ((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     graphql(`
     {
       allContentfulBlogPost {
