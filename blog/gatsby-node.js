@@ -1,7 +1,13 @@
+/**
+ * Implement Gatsby's Node APIs in this file.
+ * 
+ * see: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
+ */
+
 const path = require('path');
 
 /**
- * @type {import('gatsby').GatsbybyNode['createPages']}
+ * @type {import('gatsby').GatsbyNode['createPages']}
  */
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -19,7 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     `).then(result => {
       if (result.errors) {
-        reject(result.errors)
+        reject(result.errors);
       }
 
       result.data.allContentfulBlogPost.edges.forEach((edge) => {
@@ -27,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
           path: edge.node.slug,
           componets: require.resolve('./src/templates/blog-post.js'),
           context: {
-            slug: edge.node.slug,
+            slug: edge.node.slug
           },
         })
       })
