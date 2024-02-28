@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 const BlogPost = ({ data }) => {
-  const { title } = data.contentfulBlogPost
+  const { title } = data.contentfulBlogPost;
 
   return (
     <Layout>
