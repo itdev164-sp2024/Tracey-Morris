@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
 
       result.data.allContentfulBlogPost.edges.forEach((edge) => {
-        createPages({
+        createPage({
           path: edge.node.slug,
           componets: require.resolve('./src/templates/blog-post.js'),
           context: {
