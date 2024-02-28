@@ -17,7 +17,7 @@ export default BlogPost;
 
 export const pageQuery = graphql`
 
-query BlogPostQuery($slug: String:) {
+query BlogPostQuery($slug: String!) {
     contentfulBlogPost(slug: {eq: $slug}) {
         title
         slug
