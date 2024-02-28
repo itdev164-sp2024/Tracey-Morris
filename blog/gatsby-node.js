@@ -18,8 +18,8 @@ exports.createPages = async ({ graphql, actions }) => {
     }
 
     `).then(result => {
-      if (result.error) {
-        reject(result.errors);
+      if (result.errors) {
+        reject(result.errors)
       }
 
       result.data.allContentfulBlogPost.edges.forEach((edge) => {
@@ -27,7 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
           path: edge.node.slug,
           componets: require.resolve('./src/templates/blog-post.js'),
           context: {
-            slug: edge.node.slug
+            slug: edge.node.slug,
           },
         })
       })
