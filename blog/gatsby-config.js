@@ -22,11 +22,13 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-styled-componetes`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `xzjywthvriha`,
-        accessToken: `s1EvPqDu06q6-lmCvYY6jfxpso0AIKWTGnvPcNVdq9Y`
+        spaceId: `xzjywthvriha`,  
+        accessToken: `6IrCIaec0J_A08cLn59fTZdMs8UNOycerPh3QrEv_Ro`,
 
       }
     },
