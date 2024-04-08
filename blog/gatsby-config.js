@@ -22,14 +22,17 @@ module.exports = {
     }
   },
   plugins: [
+    
     {
       resolve: `gatsby-source-contentful`,
       options: {
-       spaceId: `${process.env.SPACE_ID}`,
-       accessToken: `${process.env.ACCESS_TOKEN}`,
+        spaceId: `xzjywthvriha`,  
+        accessToken: `6IrCIaec0J_A08cLn59fTZdMs8UNOycerPh3QrEv_Ro`,
+
       }
     },
     `gatsby-plugin-image`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
