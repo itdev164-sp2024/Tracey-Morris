@@ -22,8 +22,7 @@ module.exports = {
     }
   },
   plugins: [
-    `gatsby-plugin-image`,
-    `gatsby-plugin-styled-componetes`,
+    
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -33,6 +32,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-image`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
