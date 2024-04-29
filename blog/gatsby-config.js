@@ -12,7 +12,7 @@ require('dotenv').config({
  */
 module.exports = {
   siteMetadata: {
-    title: `Trays Gatsby Blog`,
+    title: `Trays thunderdome`,
     description: `Welcome to the thunder dome.`,
     author: `Tracey Morris`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
