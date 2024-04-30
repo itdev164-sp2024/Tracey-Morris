@@ -1,5 +1,5 @@
 import * as React from "react"
-import  propTypes  from "prop-types"
+import  PropTypes  from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
@@ -27,11 +27,11 @@ const Header = ({ siteTitle }) => (
 )
 
 Header.propTypes = {
-  siteTitle: propTypes.string
+  siteTitle: PropTypes.string
 }
 
 Header.defaultProps= {
   siteTitle: ""
 }
 
-export default Header
+export { Header }
