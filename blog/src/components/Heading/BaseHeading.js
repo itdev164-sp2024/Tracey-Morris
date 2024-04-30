@@ -7,8 +7,8 @@ const BaseHeading = ({ children, ...rest }) =>
         {children}
     </Heading>
 
-BaseHeading.PropTypes = {
-    children: PropTypes.node,isRequired
+BaseHeading.propTypes = {
+    children: PropTypes.node.isRequired
 }
 
 export { BaseHeading }
