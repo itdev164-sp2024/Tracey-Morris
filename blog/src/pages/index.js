@@ -1,35 +1,36 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
-import { GatsbyImage, gatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { List, ListItem } from '../components/List'
 import * as styles from "../components/index.module.css"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <Seo title= "Home" />
-    <ul className={styles.list}>
+    <Seo title="Home" />
+    <List width= {[1, 2/3, 7/8]} p={2}>
       {
         data.allContentfulBlogPost.edges.map(edge => (
-          <li key={edge.node.id}>
+          <ListItem p={3} key={edge.node.id}>
             <Link to={edge.node.slug}>{edge.node.title}</Link>
-          <div>
-            <GatsbyImage
-            image={edge.node.heroImage.gatsbyImageData}
-            />
+            <div>
+              <GatsbyImage
+              image={edge.node.heroImage.gatsbyImageData}
+              />
             </div>
             <div>
               {edge.node.body.childMarkdownRemark.excerpt}
-            </div>
-            </li>
+              </div>
+          </ListItem>
         ))
 
       }
-    </ul>
-
-  </Layout>
+    </List>
+    </Layout>
 )
+   
 
 /**
  * Head export to define metadata for the page
@@ -57,7 +58,7 @@ export const query = graphql`
             gatsbyImageData(
               layout: CONSTRAINED,
               placeholder: BLURRED,
-              width: 300
+              width: 600
             )
            }
           }
