@@ -26,7 +26,7 @@ const theme = {
             contrast: {
                 color: theme.colors.grays[0]
             }
-        },
+        } ,
         header: {
             primary: {
                 backgroundColor: theme.colors.grays[8],
