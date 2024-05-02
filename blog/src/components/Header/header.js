@@ -22,18 +22,18 @@ const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.variants.header.primary.color};
 `
 const Header = ({ siteTitle }) => (
-  <Outer>
+  <StyledHeader>
     <Section width={11/12}>
+      <StyledLink to="/">
         <H1>
-        <StyledLink to="/">
-          {siteTitle}
+       {siteTitle}
+          </H1>
       </StyledLink>
-      </H1>
     </Section>
     <Section width={1/12}>
       <IconButton icon={<Search />} variants='contrast'/>
     </Section>
-  </Outer>
+  </StyledHeader>
 )
 
 Header.propTypes = {

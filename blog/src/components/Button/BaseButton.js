@@ -15,5 +15,5 @@ export const BaseButton = ({ Children, ...rest}) =>
     <Reset {...rest}>{Children}</Reset>
 
 BaseButton.propTypes = {
-    children: PropTypes.node,isRequired
+    children: PropTypes.node.isRequired
 }

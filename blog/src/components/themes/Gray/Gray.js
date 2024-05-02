@@ -1,6 +1,6 @@
 const theme = {
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-    color: {
+    colors: {
         grays: { // from light to dark
             0: 'hsl(208, 13%, 100%)',
             1: 'hsl(208, 13%, 95%)',
