@@ -14,13 +14,12 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  background: ${props => props.theme.header.backgroundColor};
+  background: ${({ theme }) => theme.variants.header.primary.background};
 `
-
 const StyledLink = styled(Link)`
   font-size: var(--font-sm);
   text-decoration: none;
-  color: ${props => props.theme.header.color};
+  color: ${({ theme }) => theme.variants.header.primary.color};
 `
 const Header = ({ siteTitle }) => (
   <Outer>
@@ -32,7 +31,7 @@ const Header = ({ siteTitle }) => (
       </H1>
     </Section>
     <Section width={1/12}>
-      <IconButton icon={<Search />} />
+      <IconButton icon={<Search />} variants='contrast'/>
     </Section>
   </Outer>
 )
