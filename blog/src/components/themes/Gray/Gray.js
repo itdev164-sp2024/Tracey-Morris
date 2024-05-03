@@ -12,7 +12,7 @@ const theme = {
             7: 'hsl(208, 13%, 35%)',
             8: 'hsl(208, 13%, 25%)',
             9: 'hsl(208, 13%, 15%)',
-            10: 'hsl(208, 13%, 5%)',
+            10: 'hsl(208, 13%, 5%)'
         }
             
     }
@@ -26,7 +26,7 @@ const theme = {
             contrast: {
                 color: theme.colors.grays[0]
             }
-        },
+        } ,
         header: {
             primary: {
                 backgroundColor: theme.colors.grays[8],
@@ -38,4 +38,4 @@ const theme = {
     
 
 
-export const Gray = { ...theme, variants }
+export const Gray = { ...theme, variants}
