@@ -4,15 +4,15 @@ import styled from 'styled-components'
 import { BaseButton } from './BaseButton'
 
 const StyledButton = styled(BaseButton)`
-   ${({ theme, variant }) => theme.variants.iconButton[variant || 'primary']}
+    ${({ theme, variant }) => theme.variants.iconButton[variant || 'primary']}
 `
 
 export const IconButton = styled(({ icon, ...rest }) => {
     let clone = React.cloneElement(icon, rest)
     return <StyledButton {...rest} className={rest.className}>{clone}</StyledButton>
 })`
-    //we could add styles here,but it is not necessary.
-    //the main reason this is a sytled component is to wrap the styled icon passed in as a prop.
+    // Styled components can go here
+
 `
 
 IconButton.defaultProps = {
@@ -20,5 +20,5 @@ IconButton.defaultProps = {
 }
 
 IconButton.propTypes = {
-    Icon: PropTypes.node.isRequired
+    icon: PropTypes.node.isRequired
 }
