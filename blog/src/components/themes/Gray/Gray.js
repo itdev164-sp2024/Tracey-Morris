@@ -14,28 +14,24 @@ const theme = {
             9: 'hsl(208, 13%, 15%)',
             10: 'hsl(208, 13%, 5%)'
         }
-            
     }
 }
 
-    const variants = {
-        iconButton: {
-            primary: {
-                color: theme.colors.grays[8]
-            },
-            contrast: {
-                color: theme.colors.grays[0]
-            }
-        } ,
-        header: {
-            primary: {
-                backgroundColor: theme.colors.grays[8],
-                color: theme.colors.grays[0]
-            
-            }
+const variants = {
+    iconButton: {
+        primary: {
+            color: theme.colors.grays[8]
+        },
+        contrast: {
+            color: theme.colors.grays[0]
+        }
+    } ,
+    header: {
+        primary: {
+            backgroundColor: theme.colors.grays[8],
+            color: theme.colors.grays[0]
         }
     }
-    
-
+}
 
 export const Gray = { ...theme, variants}
