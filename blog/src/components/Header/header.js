@@ -72,7 +72,6 @@ const Header = ({ siteTitle }) => (
 )
 
 
-
 Header.propTypes = {
   siteTitle: PropTypes.string
 }
