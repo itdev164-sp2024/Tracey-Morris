@@ -26,25 +26,26 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
-    <ThemeProvider theme={Gray}>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Content>
-      <Main>{children}</Main>
+return (
+  <ThemeProvider theme={Gray}>
+    <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <Content>
+      <Main m={20}>{children}</Main>
       <Footer
         style={{
           marginTop: `var(--space-5)`,
           fontSize: `var(--font-sm)`,
         }}
       >
-        {new Date().getFullYear()} &middot; buit with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        
+       © {new Date().getFullYear()} &middot; Built with
+          {` `}
+          <a href="https://gatsbyjs.com">Gatsby</a>
         </Footer>
-        </Content>
+      </Content>
     </ThemeProvider>
-      )
-    }
+  )
+}
   
     Layout.propTypes = {
       children: PropTypes.node.isRequired
