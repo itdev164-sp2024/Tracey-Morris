@@ -6,10 +6,10 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const About = ({ data }) => {
-    const { name, company } = data.site.siteMetadata.contact
+    const { name, company } = data.site.siteMetadata.contact;
     return (
         <Layout>
-            <Seo title="About Us" />
+            <Seo title="Home" />
             <h1>About Us</h1>
             <p>{`${company} was started by ${name} in 2024.`}</p>
             <p>{`At ${company} we just make blogs!`}</p>
